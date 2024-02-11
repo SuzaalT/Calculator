@@ -4,18 +4,33 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter A Number: ");
+            Console.WriteLine("Enter A Number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter another Number: ");
-           double num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(num1 + num2);
-                
-          Console.ReadLine();
+            Console.Write("Enter A Operator: ");
+            string op = Console.ReadLine();
 
+            Console.WriteLine("Enter Another Number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
-
-
+            if (op == "+")
+            {
+                Console.WriteLine(num1 + num2);
+            } else if (op == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            } else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            } else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            } else
+            {
+                Console.WriteLine("Please Enter A Valid Number");
+            }
         }
+
+
     }
 }
